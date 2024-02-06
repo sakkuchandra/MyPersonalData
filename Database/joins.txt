@@ -1,0 +1,57 @@
+CREATE TABLE supplier(
+  SNO varchar(4) PRIMARY KEY,
+  SNAME varchar(15),
+  STATUS int(5),
+  CITY varchar(20)
+  );
+CREATE TABLE parts(
+PNO varchar(4) PRIMARY KEY,
+SNO varchar(4) REFERENCES supplier(SNO),
+PNAME varchar(15),
+COLOR varchar(10),
+WEIGH int(5),
+CITY varchar(20),
+cost int(5)
+);
+
+
+INSERT INTO supplier VALUES('S1','Smith',20,'London');
+INSERT INTO supplier VALUES('S2','Jones',10,'Paris');
+INSERT INTO supplier VALUES('S3','Blake',30,'Paris');
+INSERT INTO supplier VALUES('S4','Clark',20,'London');
+INSERT INTO supplier VALUES('S5','Adams',30,'Athens');
+INSERT INTO supplier VALUES('S6','Pavan',24,'Hyderabad');
+
+
+INSERT INTO parts VALUES('P1','S1','Nut','Red',12,'London',50);
+INSERT INTO parts VALUES('P2','S1','Bolt','Green',17,'Paris',70);
+INSERT INTO parts VALUES('P3','S2','Screw','Blue',17,'Rome',80);
+INSERT INTO parts VALUES('P4','S3','Screw','Red',14,'London',80);
+INSERT INTO parts VALUES('P5','S2','Cam','Blue',12,'Paris',90);
+INSERT INTO parts VALUES('P6','S3','Cog','Red',19,'London',68);
+
+
+Inner Join
+The inner join clause is the most widely used type of MySQL Joins. It is used to retrieve only common matching records or the records from various tables where the join condition is satisfied.
+
+select A.SNAME, B.PNAME from supplier A INNER JOIN parts B ON A.SNO=B.SNO;
+
+Left Outer Join
+LEFT JOIN clause allows retrieving all rows from the left table(Table A), along with those rows from the right table(Table B) for which the join condition is satisfied. Wherever any record of the left table does not match with the right table NULL is displayed for right-side columns.
+
+select a.SNAME, a.CITY, b.PNAME, b.COLOR from supplier a LEFT JOIN parts b ON a.SNO=b.SNO;
+
+
+Scenario:
+Suppose you have two tables: Customers and Orders. You want to retrieve a list of all customers and include their order information if they have placed orders. You would use a left outer join to achieve this, ensuring that you get all customers and their corresponding order details (if available), but not excluding customers who haven't placed orders.
+
+
+Right Outer Join
+The RIGHT OUTER JOIN follows the same principle followed by the LEFT OUTER JOIN. It retrieves all the data from the right table(Table B) and matches this data with the records from the left table(Table A). In case, the record in the right table does not have any matching record in the left table, the left table column in the result set will have null values.
+
+select a.SNAME, a.CITY, b.PNAME, b.COLOR from supplier a RIGHT JOIN parts b ON a.SNO=b.SNO;
+
+
+Scenario:
+Suppose you have two tables: Orders and Customers. You want to retrieve a list of all orders and include customer information for those orders if there's a matching customer in the Customers table. 
+

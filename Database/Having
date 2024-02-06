@@ -1,0 +1,9 @@
+SELECT City, SUM(Salary) as TotalSalary
+FROM Employee
+GROUP BY City
+HAVING City = 'London';
+
+SELECT Department, SUM(Salary) AS Total_Salary
+FROM Employee
+GROUP BY Department
+HAVING SUM(Salary) > 170000;
