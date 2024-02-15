@@ -1,0 +1,7 @@
+git rm -r Testing
+
+to remove files from the stage area
+
+To upload large quantity of files into github use following command
+
+git lfs track "*.csv"

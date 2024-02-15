@@ -1,0 +1,273 @@
+Github Details:
+
+UserName: 
+iamchandra1511
+
+Password : Hani@1603  (New Password:Iamchandra@1511)
+Email Associated to this account is:
+chandra1511amensys@gmail.com
+
+
+UserName:
+iamchandra-1511
+password
+Hani@1603
+
+UserName:
+sakkuchandra
+password:
+Hani@1603
+
+
+git init
+
+Usage: git init [repository name]
+
+This command is used to start a new repository.
+
+
+
+git remote
+Usage: git remote add [variable name] [Remote Server Link] 
+git remote add origin 
+
+This command is used to connect your local repository to the remote server.
+
+before connecting to remote repository we should use following command
+
+md <directory name>
+cd <directory name>
+git init 
+
+
+git clone
+Usage: git clone [url]  
+This command is used to obtain a repository from an existing URL.
+
+
+git add
+Usage: git add [file]  
+
+This command adds a file to the staging area.
+
+git add --all at the command line prompt in your local project directory to add the files or changes to the repository.
+
+git commit
+Usage: git commit -m “[ Type in the commit message]”  
+
+This command records or snapshots the file permanently in the version history.
+
+
+Usage: git commit -a  
+
+This command commits any files you’ve added with the git add command and also commits any files you’ve changed since then.
+
+git pull --rebase origin main
+
+Git pull rebase is a very important tool for combining changes from a remote repository into your local branch. You have to follow the given steps while performing a Git pull rebase in the command line; You must ensure that you are on the branch where you want to update.
+
+
+
+git push
+Usage: git push [variable name] master  
+
+This command sends the committed changes of master branch to your remote repository.
+Ex:
+
+Usage: git push [variable name] [branch]  
+
+This command sends the branch commits to your remote repository.
+
+Usage: git push –all [variable name]  
+
+This command pushes all branches to your remote repository.
+
+Usage: git push [variable name] :[branch name]  
+
+This command deletes a branch on your remote repository.
+
+
+
+
+
+git diff
+Usage: git diff  
+
+This command shows the file differences which are not yet staged.
+
+
+Usage: git diff –staged 
+
+This command shows the differences between the files in the staging area and the latest version present.
+
+
+Usage: git diff [first branch] [second branch]  
+
+This command shows the differences between the two branches mentioned.
+
+after git difference done we need to press q+enter. so that we will come to actual command prompt.
+
+
+git reset
+Usage: git reset [file]  
+
+This command unstages the file, but it preserves the file contents.
+
+
+Usage: git reset [commit]  
+
+This command undoes all the commits after the specified commit and preserves the changes locally.
+
+
+
+
+git status
+Usage: git status  
+
+This command lists all the files that have to be committed.
+
+
+
+git rm
+Usage: git rm [file]  
+
+This command deletes the file from your working directory and stages the deletion.
+
+
+
+git log
+Usage: git log  
+
+This command is used to list the version history for the current branch.
+
+
+
+git branch
+Usage: git branch  
+
+This command lists all the local branches in the current repository.
+
+
+Usage: git branch [branch name]  
+
+This command creates a new branch.
+
+
+Usage: git branch -d [branch name]  
+
+This command deletes the feature branch.
+
+
+git checkout
+Usage: git checkout [branch name]  
+
+This command is used to switch from one branch to another.
+
+Usage: git checkout -b [branch name]  
+
+This command creates a new branch and also switches to it.
+
+
+After branch is created locally we need to push it to remote by using folloing command
+
+git push -u origin MyBranch
+
+git merge
+Usage: git merge [branch name]  
+
+This command merges the specified branch’s history into the current branch.
+
+
+
+
+
+
+The new branch will have the same commit history as the existing branch but you can make changes to the new branch without affecting the existing branch.
+
+git command to execute:
+
+git checkout -b <new_branchname> <existing_branchname>
+
+
+
+git pull
+Usage: git pull [Repository Link]  
+
+This command fetches and merges changes on the remote server to your working directory.
+
+git stash
+Usage: git stash save  
+
+This command temporarily stores all the modified tracked files.
+
+Usage: git stash pop  
+
+This command restores the most recently stashed files.
+
+Usage: git stash list  
+
+This command lists all stashed changesets.
+
+Usage: git stash drop  
+
+This command discards the most recently stashed changeset.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git remote add origin https://github.com/iamchandra1511/Tasks.git
+
+
+To add github details to control panel:
+F:\Streams>git config --global user.email "chandra.myhome@gmail.com"
+
+F:\Streams>git config --global user.name "iamchandra1511"
+
+git push origin master
+
+git pull origin master 
+
+
+git add <file>
+
+      or
+
+git add <directory>
+
+git commit -m "commit message"
+
+
+The easiest way to create a Git branch is to use the “git checkout” command with the “-b” option for a new branch. Next, you just have to specify the name for the branch you want to create.
+
+$ git checkout -b <branch-name>
+
+
+
+In order to create a new Git branch, without switching to this new branch, you have to use the “git branch” command and specify the name of the Git branch to be created.
+
+$ git branch <branch_name>
+
+
+
+You can inspect existing branches by running the “git branch” command with the “-a” option for all branches.
+
+$ git branch -a
+
+
+
+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(Github token upto 3 months from today(07-12-2023))
+
+
+
+
